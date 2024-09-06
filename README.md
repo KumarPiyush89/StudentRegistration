@@ -29,6 +29,7 @@ c. Repository Layer (UserRepository)
     .Custom query findByEmail(String email) fetches a user by email.
     
 d. Entity (User)
+
     .Represents the user table in the database with fields: id, first_name, last_name, email, and password.
     .Includes getters and setters for encapsulating user properties.
     
