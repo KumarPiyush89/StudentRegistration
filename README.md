@@ -4,7 +4,7 @@ The program is a Spring Boot web application that manages user registrations, up
 
 2. Key Components
  
-  a. Controllers (RegistrationController)
+         a. Controllers (RegistrationController)
  
     .viewHomePage(): Renders the homepage (index.jsp).
     .showSignUpForm(Model model): Displays the registration form (register.jsp) with a new User 
@@ -15,7 +15,7 @@ The program is a Spring Boot web application that manages user registrations, up
     .processUpdate(User updatedUser): Updates user details and redirects to the list of users.
     .deleteUser(Long id): Deletes a user by ID and redirects to the list of users.
     
- b. Service Layer (UserService)
+      b. Service Layer (UserService)
  
        .Manages user operations:
          .saveUser(User user): Saves or updates a user.
@@ -23,12 +23,12 @@ The program is a Spring Boot web application that manages user registrations, up
          .getAllUsers(): Fetches all users from the database.
          .findUserById(Long id): Retrieves a user by ID.
          .deleteUserById(Long id): Deletes a user by ID.
-c. Repository Layer (UserRepository)
+     c. Repository Layer (UserRepository)
 
     .Extends JpaRepository to provide data access methods.
     .Custom query findByEmail(String email) fetches a user by email.
     
-d. Entity (User)
+    d. Entity (User)
 
     .Represents the user table in the database with fields: id, first_name, last_name, email, and password.
     .Includes getters and setters for encapsulating user properties.
