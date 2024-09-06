@@ -27,9 +27,11 @@ c. Repository Layer (UserRepository)
 
     .Extends JpaRepository to provide data access methods.
     .Custom query findByEmail(String email) fetches a user by email.
+    
 d. Entity (User)
     .Represents the user table in the database with fields: id, first_name, last_name, email, and password.
     .Includes getters and setters for encapsulating user properties.
+    
 3. Views
   The UI is implemented using JSP pages with Bootstrap for styling:
 
