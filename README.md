@@ -23,17 +23,18 @@ The program is a Spring Boot web application that manages user registrations, up
          .getAllUsers(): Fetches all users from the database.
          .findUserById(Long id): Retrieves a user by ID.
          .deleteUserById(Long id): Deletes a user by ID.
-     c. Repository Layer (UserRepository)
+   
+      c. Repository Layer (UserRepository)
 
-    .Extends JpaRepository to provide data access methods.
-    .Custom query findByEmail(String email) fetches a user by email.
+        .Extends JpaRepository to provide data access methods.
+        .Custom query findByEmail(String email) fetches a user by email.
     
-    d. Entity (User)
+      d. Entity (User)
 
-    .Represents the user table in the database with fields: id, first_name, last_name, email, and password.
-    .Includes getters and setters for encapsulating user properties.
+        .Represents the user table in the database with fields: id, first_name, last_name, email, and password.
+        .Includes getters and setters for encapsulating user properties.
     
-3. Views
+4. Views
   The UI is implemented using JSP pages with Bootstrap for styling:
 
     .index.jsp: Home page with navigation links.
@@ -41,13 +42,13 @@ The program is a Spring Boot web application that manages user registrations, up
     .register_sucess.jsp: Confirms successful registration.
     .list_users.jsp: Displays a list of all registered users with options to update or delete.
     .update_user.jsp: Form for updating an existing user’s details.
-4. Technical Notes
+5. Technical Notes
     .Spring Boot: Used for building the standalone web application.
     .Spring MVC: Implements the MVC pattern for separating concerns.
     .Spring Data JPA: Provides an abstraction layer for database interactions.
     .Bootstrap: Enhances the visual styling of the web pages.
     .JSP and JSTL: For rendering dynamic content in the views.
-5. Flow of the Application
+6. Flow of the Application
     1. Registration: Users can register via the registration form. Upon submission, the data is processed and stored in the database.
     2. List Users: Users can view a list of all registered users.
     3 .Update User: Allows modification of user details by fetching user data into a form.
