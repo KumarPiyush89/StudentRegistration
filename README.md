@@ -3,7 +3,9 @@
 The program is a Spring Boot web application that manages user registrations, updates, and deletions. It utilizes JSP for rendering the UI and follows an MVC (Model-View-Controller) architecture. The application supports basic CRUD (Create, Read, Update, Delete) operations for user entities.
 
 2. Key Components
+ 
  a. Controllers (RegistrationController)
+ 
     .viewHomePage(): Renders the homepage (index.jsp).
     .showSignUpForm(Model model): Displays the registration form (register.jsp) with a new User 
       object.
