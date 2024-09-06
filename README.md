@@ -6,14 +6,14 @@ The program is a Spring Boot web application that manages user registrations, up
  
          a. Controllers (RegistrationController)
  
-    .viewHomePage(): Renders the homepage (index.jsp).
-    .showSignUpForm(Model model): Displays the registration form (register.jsp) with a new User 
-      object.
-    .processRegister(): Handles registration form submission. It creates a new User object,saves it to the database, and returns a success view (register_sucess.jsp).
-    .listUsers(): Retrieves a list of all users and displays them in the list_users.jsp.
-    .showUpdateForm(Long id, Model model): Retrieves a user by ID for updating and displays the form (update_user.jsp).
-    .processUpdate(User updatedUser): Updates user details and redirects to the list of users.
-    .deleteUser(Long id): Deletes a user by ID and redirects to the list of users.
+             .viewHomePage(): Renders the homepage (index.jsp).
+             .showSignUpForm(Model model): Displays the registration form (register.jsp) with a new User 
+               object.
+             .processRegister(): Handles registration form submission. It creates a new User object,saves it to the database, and returns a success view (register_sucess.jsp).
+             .listUsers(): Retrieves a list of all users and displays them in the list_users.jsp.
+             .showUpdateForm(Long id, Model model): Retrieves a user by ID for updating and displays the form (update_user.jsp).
+             .processUpdate(User updatedUser): Updates user details and redirects to the list of users.
+             .deleteUser(Long id): Deletes a user by ID and redirects to the list of users.
     
       b. Service Layer (UserService)
  
