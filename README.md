@@ -13,7 +13,8 @@ The program is a Spring Boot web application that manages user registrations, up
     .listUsers(): Retrieves a list of all users and displays them in the list_users.jsp.
     .showUpdateForm(Long id, Model model): Retrieves a user by ID for updating and displays the form (update_user.jsp).
     .processUpdate(User updatedUser): Updates user details and redirects to the list of users.
-deleteUser(Long id): Deletes a user by ID and redirects to the list of users.
+    .deleteUser(Long id): Deletes a user by ID and redirects to the list of users.
+    
 b. Service Layer (UserService)
     .Manages user operations:
         .saveUser(User user): Saves or updates a user.
