@@ -4,7 +4,7 @@ The program is a Spring Boot web application that manages user registrations, up
 
 2. Key Components
  
-         a. Controllers (RegistrationController)
+      a. Controllers (RegistrationController)
  
              .viewHomePage(): Renders the homepage (index.jsp).
              .showSignUpForm(Model model): Displays the registration form (register.jsp) with a new User 
