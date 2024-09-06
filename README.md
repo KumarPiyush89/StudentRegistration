@@ -16,12 +16,13 @@ The program is a Spring Boot web application that manages user registrations, up
     .deleteUser(Long id): Deletes a user by ID and redirects to the list of users.
     
  b. Service Layer (UserService)
-    .Manages user operations:
-        .saveUser(User user): Saves or updates a user.
-        .findUserByEmail(String email): Retrieves a user by email.
-        .getAllUsers(): Fetches all users from the database.
-        .findUserById(Long id): Retrieves a user by ID.
-        .deleteUserById(Long id): Deletes a user by ID.
+ 
+       .Manages user operations:
+         .saveUser(User user): Saves or updates a user.
+         .findUserByEmail(String email): Retrieves a user by email.
+         .getAllUsers(): Fetches all users from the database.
+         .findUserById(Long id): Retrieves a user by ID.
+         .deleteUserById(Long id): Deletes a user by ID.
 c. Repository Layer (UserRepository)
     .Extends JpaRepository to provide data access methods.
     .Custom query findByEmail(String email) fetches a user by email.
