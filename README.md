@@ -34,23 +34,31 @@ The program is a Spring Boot web application that manages user registrations, up
         .Represents the user table in the database with fields: id, first_name, last_name, email, and password.
         .Includes getters and setters for encapsulating user properties.
     
-4. Views
-  The UI is implemented using JSP pages with Bootstrap for styling:
+3. Views
 
-    .index.jsp: Home page with navigation links.
-    .register.jsp: Registration form for new users.
-    .register_sucess.jsp: Confirms successful registration.
-    .list_users.jsp: Displays a list of all registered users with options to update or delete.
-    .update_user.jsp: Form for updating an existing user’s details.
-5. Technical Notes
-    .Spring Boot: Used for building the standalone web application.
-    .Spring MVC: Implements the MVC pattern for separating concerns.
-    .Spring Data JPA: Provides an abstraction layer for database interactions.
-    .Bootstrap: Enhances the visual styling of the web pages.
-    .JSP and JSTL: For rendering dynamic content in the views.
+    The UI is implemented using JSP pages with Bootstrap for styling:
+
+       .index.jsp: Home page with navigation links.
+       .register.jsp: Registration form for new users.
+       .register_sucess.jsp: Confirms successful registration.
+       .list_users.jsp: Displays a list of all registered users with options to update or delete.
+       .update_user.jsp: Form for updating an existing user’s details.
+
+    
+4. Technical Notes
+
+       .Spring Boot: Used for building the standalone web application.
+       .Spring MVC: Implements the MVC pattern for separating concerns.
+       .Spring Data JPA: Provides an abstraction layer for database interactions.
+       .Bootstrap: Enhances the visual styling of the web pages.
+       .JSP and JSTL: For rendering dynamic content in the views.
+   
 6. Flow of the Application
-    1. Registration: Users can register via the registration form. Upon submission, the data is processed and stored in the database.
-    2. List Users: Users can view a list of all registered users.
-    3 .Update User: Allows modification of user details by fetching user data into a form.
-    4. Delete User: Enables the deletion of user records.
+    
+       1. Registration: Users can register via the registration form. Upon submission, the data is processed and stored in the database.
+       2. List Users: Users can view a list of all registered users.
+       3 .Update User: Allows modification of user details by fetching user data into a form.
+       4. Delete User: Enables the deletion of user records.
+
+   
 This structure provides a comprehensive yet straightforward user management system with basic authentication and CRUD functionalities. If you need further details or specific clarifications, let me know!
