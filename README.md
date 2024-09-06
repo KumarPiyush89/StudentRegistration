@@ -24,6 +24,7 @@ The program is a Spring Boot web application that manages user registrations, up
          .findUserById(Long id): Retrieves a user by ID.
          .deleteUserById(Long id): Deletes a user by ID.
 c. Repository Layer (UserRepository)
+
     .Extends JpaRepository to provide data access methods.
     .Custom query findByEmail(String email) fetches a user by email.
 d. Entity (User)
